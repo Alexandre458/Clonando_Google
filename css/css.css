@@ -116,6 +116,8 @@ main {
             margin: 29px;
             border: #5F6368 1px solid;
             border-radius: 25px;
+            
+        
            
             display: flex;
             align-items: center;
@@ -126,6 +128,9 @@ main {
                 margin: 5px;
                 justify-content: center;
                 align-items: center;
+                &.icon-off{
+                    display: none;
+                }
             }
 
         }
@@ -154,6 +159,10 @@ main {
     main {
         position: relative;
         top: -160px;
+
+        & form > div:nth-child(1) > *.icon-off{
+            display: flex;
+        }
     }
 
     footer {
